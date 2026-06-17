@@ -3,38 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-
+    <title>Akira Tech Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h2>Akira Tech</h2>
+    <nav>
+        <div class="logo">Akira Tech</div>
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section class="hero">
+    <section id="home" class="hero">
+        <h1>Learn AI & Full Stack Development</h1>
+        <p>Build modern web applications with confidence.</p>
+        <button id="startBtn">Get Started</button>
+    </section>
 
-        <h1>Build Your Future With Technology</h1>
+    <section id="features" class="features">
+        <h2>Features</h2>
+
+        <div class="feature-container">
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Create responsive websites using HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI Integration</h3>
+                <p>Build intelligent applications using AI tools.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud Ready</h3>
+                <p>Deploy and scale applications efficiently.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
 
         <p>
-            Learn Web Development, AI and Full Stack Development.
+            Akira Tech helps students learn Full Stack Development,
+            AI tools and modern software technologies through
+            practical projects.
         </p>
-
-        <button id="btn">
-            Get Started
-        </button>
-
     </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Akira Tech. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 

@@ -1,4 +1,4 @@
-const button = document.getElementById("btn");
+const button = document.getElementById("startBtn");
 
 button.addEventListener("click", () => {
     alert("Welcome to Akira Tech!");
